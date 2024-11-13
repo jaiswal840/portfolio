@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body> 
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <img class="logo"
+            src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="logo">
+            <div class="navbar-links">
+                <ul class="menu_items">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT
+
+                    </a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <button class="phone-button">Download CV</button>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+        <ul class="menu_items">
+                <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <button class="phone-button">+123 456 7890</button>
+        </ul>
+        </div>
+
+    <!-- hero section  -->
+        <header class="hero">
+            <div class="hero-text">
+                <h1>Welcome to My Website</h1>
+                <p>Explore my projects and get to know me!</p>
+            </div>
+        </header>
+    <!-- About Me Section-->
+        <section class="about-me" id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="about-heading">About Me</h2>
+                    <p class="about-paragraph">
+                        "Hello, I'm Aakash jaiswal, a recent graduate from lilaram engineering college with a degree in [computer engineering]. During my studies, I gained practical experience through internships in [relevant area], and I'm now excited to apply my knowledge and skills in a professional setting."
+                                varius.<br /><br /> Phasellus varius dolor ac velit laoreet, sed malesuada lacus
+                                scelerisque. Donec a
+                                condimentum elit. Fusce vitae lacus ante. Sed a tempor magna. Aliquam erat volutpat. Nulla
+                                facilisi. Integer in quam in urna dignissim malesuada. Nunc ultricies, nunc at dictum
+                                gravida,
+                                erat ante vehicula felis, non tincidunt nisi metus eget odio. Etiam id libero dui. Sed ut
+                                nibh
+                                vehicula, cursus nulla ut, tincidunt nunc. Maecenas lacinia blandit elit, in lacinia arcu
+                                dapibus
+                                sit amet.<br /><br /> Cras sed risus vel lacus sodales convallis. Ut lacinia augue felis, a
+                                feugiat mi
+                                consectetur eu. Nullam et urna eu elit egestas interdum. Proin sodales, lorem vitae
+                                fringilla
+                                pellentesque, lectus libero malesuada nisl, ut faucibus mi urna id sapien.
+                        
+                    </p>
+                </div>
+                <div class="top-img">
+                    <div class="about-images-single">
+                        
+                    </div>
+                    <div class="about-images">
+                        <img src="https://images.pexels.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="profile image 1"> 
+                        <img src="https://images.pexels.com/photos/50614/pexels-photo-50614.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="profile image 2"> 
+                        
+                    </div>
+
+                    
+                </div>
+
+            </div>
+        </section>
+         <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-categories">
+                <button onclick="filterPortfolio('web-design')" class="active">Web Design</button>
+                <button onclick="filterPortfolio('graphic-design')">Graphic Design</button>
+                <button onclick="filterPortfolio('mobile-apps')">Mobile Apps</button>
+            </div>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item web-design">
+                    <img src="https://images.pexels.com/photos/19976786/pexels-photo-19976786/free-photo-of-brunette-woman-in-black-coat-reading-book-in-park.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 1" />
+                                    <p>Web Design Project 1</p>
+                </div>
+                <div class="portfolio-item web-design">
+                    <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 2" />
+                                    <p>Web Design Project 2</p>
+                </div>
+                <div class="portfolio-item web-design">
+                    <img src="https://images.pexels.com/photos/7567444/pexels-photo-7567444.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 3" />
+                                    <p>Web Design Project 3</p>
+                </div>
+                <div class="portfolio-item graphic-design">
+                    <img src="https://images.pexels.com/photos/1601773/pexels-photo-1601773.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 5">
+                    <p>Graphic Design Project 1</p>
+                </div>
+
+                <div class="portfolio-item graphic-design">
+                    <img src="https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 5">
+                    <p>Graphic Design Project 2</p>
+                </div>
+                <div class="portfolio-item graphic-design">
+                    <img src="https://images.pexels.com/photos/3747279/pexels-photo-3747279.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 6">
+                    <p>Graphic Design Project 3</p>
+                </div>
+                <div class="portfolio-item mobile-apps">
+                    <img src="https://images.pexels.com/photos/6370364/pexels-photo-6370364.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 7">
+                    <p>Mobile App Project 1</p>
+                </div>
+                <div class="portfolio-item mobile-apps">
+                    <img src="https://images.pexels.com/photos/9822748/pexels-photo-9822748.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 8">
+                    <p>Mobile App Project 2</p>
+                </div>
+                <div class="portfolio-item mobile-apps">
+                    <img src="https://images.pexels.com/photos/3571094/pexels-photo-3571094.jpeg?auto=compress&cs=tinysrgb&w=600"; alt="Portfolio Item 9">
+                    <p>Mobile App Project 3</p>
+
+                <!-- <div class="portfolio-item web-design">
+                    <img src="https://images.pexels.com/photos/3186386/pexels-photo-3186386.jpeg?auto=compress&cs=tinysrgb&w=600</div>
+                    <div class="portfolio-item web-design">
+                    
+                        <img src="https://images.pexels.com/photos/3186386/pexels-photo-3186386.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Portfolio Item 3">
+                        <p>Web Design Project 3</p>" alt="Portfolio Item 2">
+                    <p>Web Design Project 2</p>
+                </div> -->
+            </div>
+        </section>
+       
+<!-- Contact Us Section -->
+<section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Personal Information</h3>
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Kapilvastu, Taulihawa City, Nepal</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i> aakashjaiswal9804484513@gmail.com</li>
+                <li><i class="fa fa-phone-square" aria-hidden="true"></i> +977 9804484513</li>
+            
+            </ul>
+        </div>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message"
+                        required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Portfolio. All rights reserved.</p>
+</footer>
+</div>
+
+<script>
+function filterPortfolio(category) {
+    const items = document.querySelectorAll('.portfolio-item');
+    const buttons = document.querySelectorAll('.portfolio-categories button');
+
+    items.forEach(item => {
+        if (item.classList.contains(category)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    document.querySelector(`[onclick="filterPortfolio('${category}')"]`).classList.add('active');
+}
+
+function toggleMenu() {
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    hamburgerMenu.classList.toggle('active');
+}
+
+
+window.onload = function () {
+    filterPortfolio('web-design');
+}
+</script>
+</body>
+
+</html></ul>
+        </div>
